@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="buttonApp">
+	<head>
+		<meta charset="utf-8">
+		<title>The button</title>
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/styles.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.js"></script>
+
+        <!-- 1 - link to firebase and angularfire -->
+        <script src="js/firebase.js"></script>
+        <script src="js/angularfire.js"></script>
+        <!--  -->
+
+		<script src="js/app.js"></script>
+        <script src="js/buttonController.js"></script>
+	</head>
+	<body>
+        <div ng-controller="ButtonController as buttonCtrl">
+
+            <div class="circle {{buttonCtrl.button.color}}" ng-click="buttonCtrl.clickMe()">
+            	
+            </div>
+        </div>
+	</body>
+</html>
